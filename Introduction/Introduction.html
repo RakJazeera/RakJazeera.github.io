@@ -205,7 +205,7 @@
 						textbox.style.textAlign="left";
 						switch (area){
 							default:
-								textbox.innerHTML="<h3>Al Jazeera AlHamra</h3>AL Jazirath al-Hamra is the only historical pearling town in the Gulf, which survived the modernisation and fast development after the discovery of oil. It is an exceptional testimony to the long established architecture and town planning of the past, and includes all traditional elements of a former Gulf town: a fort and watchtowers, mosques, suq, and large numbers of courtyard houses, which represent since thousands of years the archetype of housing in the Middle East, and reflect the different social strata of a pre oil settlement. They range from simple homes, to small courtyard houses, ornate two storey buildings, and large courtyard residences belonging to rich pearl merchants. In a unique way, both the past way of life and the very first modern transformations of the U.A.E. are preserved and reflected in the architecture and structural set-up of this abandoned town. While it provides a fascinating insight into the former traditional life along the Gulf, Jazirat al-Hamra also displays the early introduction of modern building materials (sand bricks, cement, paint), before its abandonment and inhabitant’s departure at the beginning of the oil boom.";
+								textbox.innerHTML="<h3>Al Jazeera al-Hamra</h3>AL Jazirath al-Hamra is the only historical pearling town in the Gulf, which survived the modernisation and fast development after the discovery of oil. It is an exceptional testimony to the long established architecture and town planning of the past, and includes all traditional elements of a former Gulf town: a fort and watchtowers, mosques, suq, and large numbers of courtyard houses, which represent since thousands of years the archetype of housing in the Middle East, and reflect the different social strata of a pre oil settlement. They range from simple homes, to small courtyard houses, ornate two storey buildings, and large courtyard residences belonging to rich pearl merchants. In a unique way, both the past way of life and the very first modern transformations of the U.A.E. are preserved and reflected in the architecture and structural set-up of this abandoned town. While it provides a fascinating insight into the former traditional life along the Gulf, Jazirat al-Hamra also displays the early introduction of modern building materials (sand bricks, cement, paint), before its abandonment and inhabitant’s departure at the beginning of the oil boom.";
 								audiopath="audio/english/en_introduction.mp3";
 								break;
 							case "Fort":
@@ -254,7 +254,8 @@
 					audio.play();
 					audio.onended = function() {
 						model.pause();
-						window.location.href = url.origin+"/"+lang+"/"+area+lang.replace(lang.charAt(0),lang.charAt(0).toUpperCase())+"/index.html";
+						if (area!="null")
+							window.location.href = url.origin+"/"+lang+"/"+area+lang.replace(lang.charAt(0),lang.charAt(0).toUpperCase())+"/index.html";
 					}; 
 				}
 			}
