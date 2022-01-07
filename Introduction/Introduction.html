@@ -214,7 +214,7 @@
 								break;
 							
 							case "House1":
-								textbox.textContent='The fort started as a watch tower (part of the series of watch towers around the village on the island was recorded by the British in 1820) at the edge of the original island. The fort grew around the watch tower and represents a shared communal space. it is a large rectangular structure with two impressive towers on opposite sides, one rectangular and one round, highlight the former defensive character of the fort. The round tower is larger and older than the rectangular tower. Inside the fort, you will also see different types of structures including winter-houses and summer-houses. In order to identify winter houses, look for those with no windows or ventilation system. Generally, the winter-house is located on the western side of a compound complex and the summer-house at the southern side to catch more of the breeze coming from the north. But there are examples where such distribution is not so strict. The fort building also represents most of the traditional building features.';
+								textbox.textContent='While this villa is not particularly large, it has a summer-house and a winter-house. The summer-house is built on the foundation of the traditional summer-house using sand bricks. The use of sand bricks started in Ras Al Khaimah in 1950s replacing the traditional material (coral stone and beach rock). Where as the winter-house is built using coral stone and beach rock and it has the traditional plaster decoration on the wall, which is a very common design found throughout Ras Al Khaimah. Inside the compound, you will also see an outside washing area.';
 								audiopath="audio/english/en_house1.mp3";
 								break;
 
@@ -254,7 +254,7 @@
 					audio.play();
 					audio.onended = function() {
 						model.pause();
-						window.location.href = url.origin+"/"+lang+"/"+area+lang.charAt(0).toUpperCase();
+						window.location.href = url.origin+"/"+lang+"/"+area+lang.replace(lang.charAt(0),lang.charAt(0).toUpperCase);
 					}; 
 				}
 			}
