@@ -254,7 +254,7 @@
 					audio.play();
 					audio.onended = function() {
 						model.pause();
-						window.location.href = url.origin+"/"+lang+"/"+area+lang;
+						window.location.href = url.origin+"/"+lang+"/"+area+lang.charAt(0).toUpperCase();
 					}; 
 				}
 			}
