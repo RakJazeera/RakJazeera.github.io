@@ -131,6 +131,9 @@
     <model-viewer id="modelviewer" class="fullscreen" src="geometry/ArabMan.glb" skybox-image ="images/hdr.jpg" ar ar-scale="fixed" touch-action="none" 
 	disable-zoom ar-button ar-modes="webxr scene-viewer quick-look" animation-name="talk" s-poster shadow-intensity="1"	camera-orbit="0deg 70deg 2.5m" 
 	camera-target="0m 2.2m 0m" >
+		<button slot="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px; ">
+			⭐ Activate AR
+		</button>
 		<div id="textbox">
 			<button id="skip" onmousedown="skip()";></button>
 			<p id="textbox_text"></p>
