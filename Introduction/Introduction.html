@@ -294,7 +294,10 @@
 				area = a;
 				lang = l;
 				if (area!="null")
-							window.location.href = url.origin+"/"+lang+"/"+area+lang.replace(lang.charAt(0),lang.charAt(0).toUpperCase())+"/index.html";
+					window.location.href = url.origin+"/"+lang+"/"+area+lang.replace(lang.charAt(0),lang.charAt(0).toUpperCase())+"/index.html";
+				else 
+					window.location.href = url.origin
+
 			}
 		</script>
 		
